@@ -11,5 +11,3 @@ A minimal Gym environment designed to test recursive ambiguity tolerance and sem
 
 Provide a falsifiable test for models that route meaning via constraint reformation rather than reward-maximization.  
 See discussion with @grok for technical context and simulation results.
-
-https://x.com/rococopyramid/status/1950340965408911460

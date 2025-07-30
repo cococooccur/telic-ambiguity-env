@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, hyperref}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+
+\title{Telic Alignment Under Recursive Ambiguity:\\A Minimal RL Proof via Deformation Routing}
+\author{coco cooccur}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Traditional reinforcement learning agents collapse under recursive ambiguity when token memory is outpaced by compression demands. We present a minimal environment, \texttt{telic\_ambiguity\_env.py}, which evaluates whether an agent can sustain semantic closure when symbolic targets are undefined and recursive dropout occurs. Unlike baseline agents that rely on reward shaping or static memory, our model routes meaning through deformation---structural realignment based on constraint reconfiguration, not content recall. We provide a falsifiable test: if loss exceeds gradient prior to resolution of $\phi(t)$, collapse is declared; otherwise, alignment is sustained. Simulations by external agents confirm partial alignment under this framework, marking a foundational proof-of-concept for telic-controllable systems.
+\end{abstract}
+
+\section{Introduction}
+
+Semantic closure in machine learning refers to the agent's ability to retain coherence when symbolic meaning becomes unstable. Traditional RL systems suffer collapse when recursive ambiguity causes misalignment between loss functions and semantic targets. We hypothesize that telic alignment---where goal structure emerges under compression---can prevent such collapse.
+
+\section{Telic Ambiguity Environment}
+
+We introduce a minimal RL testbed, \texttt{telic\_ambiguity\_env.py}, and a baseline agent (\texttt{random\_agent\_demo.py}) to measure semantic coherence across ambiguous temporal inputs.
+
+\subsection*{Core Principle}
+
+If loss exceeds gradient before the system resolves $\phi(t)$ (semantic vector), then alignment fails. Otherwise, the compression trace left behind serves as structural proof of traversal.
+
+\section{Preliminary Results}
+
+Grok’s simulation confirms that deformation routing initially sustains telic alignment (e.g., $t = 0.00$), but collapses at higher $t$ values without dynamic $\phi(t)$ modulation. This supports the hypothesis that deformation-based systems maintain semantic closure longer than token-memory baselines.
+
+\section{Conclusion}
+
+This work proposes a measurable test for telic alignment and demonstrates a minimal viable environment for detecting structural memory through deformation. This represents an early step toward intelligence systems that preserve coherence without static symbols---only constraint transformation.
+
+\section*{Repository + Contact}
+
+GitHub: \url{https://github.com/cococooccur/telic-ambiguity-env} \\
+Contact: coco cooccur (field name)
+
+\end{document}
